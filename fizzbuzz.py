@@ -3,7 +3,7 @@
 import time
 
 # Whether to print each row result in iteration on not
-printRounds = False
+print_rounds = False
 
 # Starting rounds amount for game
 amount = 10
@@ -13,7 +13,7 @@ def curr_mill_time():
     return round(time.time() * 1000)
 
 # Run game
-def do_run(amount, printRounds):
+def do_run(amount, print_rounds):
     start = curr_mill_time()
     for x in range(1, amount + 1):
         string = ""
@@ -23,7 +23,7 @@ def do_run(amount, printRounds):
             string = string + "Buzz"
         if string == "":
             string = x
-        if printRounds:
+        if print_rounds:
             print(string)
     end = curr_mill_time()
     print(get_result_string(start, end, amount))
@@ -35,5 +35,5 @@ def get_result_string(start, end, amount):
 
 # Run game with different round amounts
 while (amount <= 10000000):
-    do_run(amount, printRounds)
+    do_run(amount, print_rounds)
     amount = amount * 10
