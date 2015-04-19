@@ -1,7 +1,7 @@
 # See about Fizz buzz in here, http://en.wikipedia.org/wiki/Fizz_buzz
 
-def doRun():
-    for x in range(1, 101):
+def doRun(toNumber):
+    for x in range(1, toNumber + 1):
         string = ""
         if x % 3 == 0:
             string = "Fizz"
@@ -10,4 +10,4 @@ def doRun():
         if string == "":
             string = x
         print(string)
-doRun()
+doRun(100)
