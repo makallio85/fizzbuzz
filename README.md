@@ -1,5 +1,5 @@
 # Fizz buzz
-My first python script (and php-version also to compare speed)
+My first python script (and php-version also to compare speed). I did run those scripts in console and saw some difference in performance.
 
 PHP
 - It took 0 milliseconds to run 10 rounds in Fizz buzz game.
